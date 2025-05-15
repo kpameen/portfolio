@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ameen KP | Portfolio</title>
+  <link rel="icon" href="images/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(120deg, #0f0c29, #302b63, #24243e);
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 2em 1em;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.8em;
+      margin-top: 1em;
+    }
+
+    nav a {
+      color: #e1306c;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .section {
+      max-width: 800px;
+      margin: 2em auto;
+      padding: 1.5em;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 18px;
+      padding: 2em;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #e1306c;
+      object-fit: cover;
+      margin-bottom: 1em;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.3em;
+    }
+
+    h2 {
+      color: #e1306c;
+      font-size: 1.5em;
+      margin-bottom: 0.8em;
+    }
+
+    p, li {
+      color: #ddd;
+      font-size: 15px;
+    }
+
+    ul {
+      padding-left: 1.2em;
+    }
+
+    .btn {
+      background-color: #e1306c;
+      color: white;
+      padding: 0.6em 1.4em;
+      border-radius: 30px;
+      display: inline-block;
+      margin-top: 1em;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: #c42b5c;
+    }
+
+    .btn i {
+      margin-right: 6px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2em 1em;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    @media (max-width: 500px) {
+      nav {
+        flex-direction: column;
+        gap: 1em;
+      }
+
+      .profile-img {
+        width: 100px;
+        height: 100px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="c:\Users\LOQ\Desktop\portfolio\ameen.jpg" alt="Ameen KP" class="profile-img" data-aos="flip-up" />
+    <h1 data-aos="zoom-in">Iameenkp</h1>
+    <p data-aos="fade-up">Web Developer | Designer | Creator</p>
+    <nav data-aos="fade-down">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="section card" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>Hey, I'm Ameen. I love mixing tech with design. I enjoy making simple, clean websites and visuals that speak for themselves.</p>
+  </section>
+
+  <section id="projects" class="section card" data-aos="fade-right">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>My Portfolio:</strong> You're looking at it! Built with just HTML, CSS, and some animations.</li>
+      <li><strong>Telegram Movie Bot:</strong> Python script for managing movie collections inside Telegram.</li>
+      <li><strong>Social Posters:</strong> Designed event and promo posters using Canva and Photoshop.</li>
+    </ul>
+  </section>
+
+  <section id="skills" class="section card" data-aos="fade-left">
+    <h2>Skills</h2>
+    <ul>
+      <li>Frontend: HTML, CSS, JavaScript</li>
+      <li>Learning: Tailwind, React, Flask</li>
+      <li>Design: Canva, Figma, Photoshop</li>
+      <li>Languages: English, Malayalam</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section card" data-aos="zoom-in">
+    <h2>Contact</h2>
+    <p>Got something in mind? Let’s connect.</p>
+    <a class="btn" href="https://instagram.com/iameenkp" target="_blank">
+      <i class="fab fa-instagram"></i>Instagram
+    </a>
+    <br>
+    <a class="btn" href="mailto:ameenkattu@gmail.com">
+      <i class="fas fa-envelope"></i>Email
+    </a>
+  </section>
+
+  <footer data-aos="fade-up">
+    &copy; 2025 Ameen KP
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>
